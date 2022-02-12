@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--link css local-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <header>
+        <!--clases 
+            navbar-expand-lg: para que el menu pase de hamburguesa a expandido, si se coloca md, en vez de lg se expande el menu en tablet
+            navbar-light : el navabr ligth (letras negras)
+            navbar-dark : el navabr dark (letras blancas)
+            bg-light  / bg-dark : fondo, este se puede quitar y cambiarlo por un fondo que ustedes quieran
+
+        -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand icono " href="#">
+                    <img src="multimedia/camara.png" alt="" class="d-block w-100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Porfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <!--portada-->
+        <!--el contendor fluid es para que ocupe toda la pantalla-->
+        <section class="container-fluid portada">
+            <!--fila-->
+            <article class="row">
+                <div class="col-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+                    <h1>
+                        Fotografía
+                    </h1>
+                    <h2>Para redes sociales</h2>
+                    <div>
+                        <a href="" class="btn btn-info">Conoceme</a>
+                        <a href="" class="btn btn-info"> Porfolio</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--sobre mi-->
+
+        <section class="container">
+
+            <article class="row">
+
+                <!--las columanas siempre tienen que sumas 12 en total
+                si quiero dos filas distintas tienen que ser nuemeros que sumen 12
+
+                Ej: una columna ocupa 4 espacios (col-4)  y otra 8 (col-8) 
+            -->
+
+                <!--primera columna-->
+                <div class="col-12 col-lg-4">
+                    <img src="multimedia/sobre-mi.jpg" alt="" class="d-block w-100">
+                </div>
+
+                <!--segunda columna-->
+                <div class="col-12 col-lg-8">
+                    <h2>Hola, soy....</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde provident quibusdam eos inventore, cum nostrum nam!
+                        Labore obcaecati illum cupiditate, nihil ea non deleniti
+                        expedita odit, saepe, similique blanditiis sed?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam distinctio doloremque
+                        veritatis suscipit neque quibusdam veniam. Nisi perspiciatis fuga illum iusto. Qui quas,
+                        aspernatur totam sint repellat asperiores veniam.
+                    </p>
+
+                    <div>
+                        <h3>Skills</h3>
+                        <ul class="skils d-flex">
+                            <li><img src="multimedia/camara.png" alt="" class="d-block w-100"></li>
+                            <li><img src="multimedia/ligthroom-photoshop.png" alt="" class="d-block w-100"></li>
+                            <li><img src="multimedia/photoshop.png" alt="" class="d-block w-100"></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+        <section class="container">
+            <h2>Servicios</h2>
+            <div class="row">
+                <!--sercios-->
+
+                <!--si quiero columnas iguales, voy a dividir 12 por el numero de columnas que quiero
+                
+                Ej:si quiero 1, 12 / 1 = 12 ... col-12
+                Ej: si quiero 2, 12 / 2 = 6 ... col-6
+            -->
+                <article class="col-12 col-md-6 col-lg-3 columna">
+                    <!--card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="multimedia/card-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-info">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-3 columna">
+                    <!--card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="multimedia/card-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-info">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-3 columna">
+                    <!--card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="multimedia/card-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="botones-link">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-3 columna">
+                    <!--card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="multimedia/card-4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="botones-link">Go somewhere</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--porfolio-->
+        <section class="container">
+            <h2>Porfolio</h2>
+
+            <article class="row columna">
+
+                <!-- fila carrusel-->
+                <div class="col-12 col-lg-6">
+
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/card-1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="multimedia/card-2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="multimedia/card-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+                </div>
+
+                <!--galeria de imagenes-->
+                <div class="col-12 col-lg-6 d-flex flex-wrap">
+                    <img src="multimedia/card-1.jpg" alt="" class="d-block w-50">
+                    <img src="multimedia/card-2.jpg" alt="" class="d-block w-50">
+                    <img src="multimedia/card-3.jpg" alt="" class="d-block w-50">
+                    <img src="multimedia/card-4.jpg" alt="" class="d-block w-50">
+                </div>
+            </article>
+
+            <article class="row columna">
+                <!--galeria de imagenes-->
+                <div class="col-12 col-lg-6 d-flex flex-wrap">
+                    <img src="multimedia/card-1.jpg" alt="" class="d-block w-50">
+                    <img src="multimedia/card-2.jpg" alt="" class="d-block w-50">
+                    <img src="multimedia/card-3.jpg" alt="" class="d-block w-50">
+                    <img src="multimedia/card-4.jpg" alt="" class="d-block w-50">
+                </div>
+
+                <!--columana con carrusel-->
+                <div class="col-12 col-lg-6">
+                    <!--carrusel-->
+                    <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <!--imagenes del carrusel-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/card-1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="multimedia/card-2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="multimedia/card-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <ul class="d-flex redes justify-content-center">
+            <li><a href=""><img src="multimedia/youtube.png" alt="" class="d-block w-100"></a></li>
+            <li><a href=""><img src="multimedia/whatsapp.png" alt="" class="d-block w-100"></a></li>
+            <li><a href=""><img src="multimedia/instagram.png" alt="" class="d-block w-100"></a></li>
+        </ul>
+        <!--creditos-->
+        <ul class="d-flex flex-column justify-content-center align-items-center">
+            <li>
+                <a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos">Instagram iconos
+                    creados por riajulislam - Flaticon</a>
+            </li>
+            <li>
+                <a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp iconos creados
+                    por riajulislam - Flaticon</a>
+            </li>
+            <li>
+                <a href="https://www.flaticon.es/iconos-gratis/youtube" title="youtube iconos">Youtube iconos creados
+                    por riajulislam - Flaticon</a>
+            </li>
+
+            <li>
+                <a href="https://www.flaticon.es/iconos-gratis/camara" title="cámara iconos">Cámara iconos creados por
+                    Uniconlabs - Flaticon</a>
+            </li>
+
+            <li>
+                <a href="https://www.flaticon.es/iconos-gratis/adobe" title="adobe iconos">Adobe iconos creados por
+                    Freepik - Flaticon</a>
+            </li>
+
+            <li>
+                <a href="https://www.flaticon.es/iconos-gratis/photoshop" title="photoshop iconos">Photoshop iconos
+                    creados por Freepik - Flaticon</a>
+            </li>
+            <li>
+                Images by Amy for <a href="https://www.rawpixel.com/"> rawpixel.com </a>
+            </li>
+        </ul>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
